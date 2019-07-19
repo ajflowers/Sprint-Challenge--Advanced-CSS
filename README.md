@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+*An adaptive website has multiple layouts hardcoded for different viewport sizes; a responsive website dynamically resizes and/or rearranges elements based on the viewport size.*
+
 2. Describe what it means to be mobile first vs desktop first.
+
+*Mobile-first means designing the mobile page first and using min-width media queries to build a desktop view. Desktop-first means designing the desktop page first and using max-width media queries to build a mobile view.*
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+*It sets 1rem=10px for most browsers using default font size settings (16px), but avoids hardcoding a pixel size that would override any local font size settings. If font-size were manually set to 10px in html, this would override any local settings for different font sizes. By using percentage, any users whose default font size is larger or smaller than 10px will see all text scaled proportionally based on their own settings. This is particularly important for accessibility, as users with impaired vision often use larger font settings to more easily read the websites they visit.*
+
 4. How would you describe preprocessing to someone new to CSS?
 
+*Preprocessing is the use of a compiler to build the CSS code for a page out of one or more files written in a different syntax. This allows for greater reuse of elements, more adaptability via defining variables, and a more intuitive layout for editing nested elements.*
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+*My favorite concept in preprocessing is nesting. For example, applying styles to nav links in the header section only, one can define nav styles within the header styling, and link styles within the nav styling, rather than create a separate 'header nav a' style, is easier to code and makes it easier to find that specific style later on by looking within the header code, then the nav code within the header code, etc. The concept that gives me the most trouble, ironically, is also nesting, as there are other times where it can be difficult to determine the correct level to apply a styling change.*
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -78,7 +88,7 @@ Your finished project must include all of the following requirements:
 
 ### Import LESS Files
 
-* [ ] Navigate to your `index.less` file. Notice the file is blank. You have been asked to use a certain import order. That order is as follows:
+* [x] Navigate to your `index.less` file. Notice the file is blank. You have been asked to use a certain import order. That order is as follows:
 
 ```markdown
 1.variables.less
@@ -94,27 +104,27 @@ _You will know everything is working properly when you see the styles enabled fo
 
 ### Home Page - Desktop HTML & LESS
 
-* [ ] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.
+* [x] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.
 
-* [ ] Add a viewport meta tag to the head of your index.html page
+* [x] Add a viewport meta tag to the head of your index.html page
 
-* [ ] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file](index.html)
+* [x] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file](index.html)
 
-* [ ] Navigation Styles: Use the `navigation.less` file for styling.
+* [x] Navigation Styles: Use the `navigation.less` file for styling.
 
-* [ ] Main Content Styles: Use the `home-page.less` file for styling
+* [x] Main Content Styles: Use the `home-page.less` file for styling
 
-* [ ] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
+* [x] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
 
-* [ ] LESS Parametric Mixin: create a parametric mixin that is used to create the `sign up` button styles.
+* [x] LESS Parametric Mixin: create a parametric mixin that is used to create the `sign up` button styles.
 
-* [ ]  Use at least 2 parameters to create your button
+* [x]  Use at least 2 parameters to create your button
 
-* [ ] Create a hover state that swaps the background color and font color of the base button styles.
+* [x] Create a hover state that swaps the background color and font color of the base button styles.
 
 ### Mobile Design
 
-* [ ] Create a `@phone` variable that contains a `max-width: 500px` media query string. Use the `@phone` variable for all your nested mobile styling.
+* [x] Create a `@phone` variable that contains a `max-width: 500px` media query string. Use the `@phone` variable for all your nested mobile styling.
 
 * [ ] [Review the provided home mobile design file](design-files/home-mobile.png). Match your mobile styling the best you can using the design file.
 
